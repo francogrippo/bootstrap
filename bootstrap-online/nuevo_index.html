@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOTSTRAP DEMO</title>    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
-       
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">        
 </head>
 <header class="container-fluid bg-primary d-flex justify-content-center">
     <p class="text-light mb-0 p-2 fs-6">La biblioteca virtual llegó</p>    
@@ -38,53 +38,77 @@
                         <a class="nav-link active" aria-current="page" href="#">Comunidad</a>
                       </li>     
         <!-- boton <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
-          <button class="btn  btn-primary-outline-success btn-primary" type="button">Search</button>
-        </form>  -->         
+          <button class="btn  btn-primary-outline-success btn-primary" type="button">Suscribite</button>
+        </form>  -->  
+        
       </div>
     </div>
   </nav>
-<h1>libreria Virtual</h1>
-<h2>h2. Bootstrap heading</h2>
-<h3>h3. Bootstrap heading</h3>
-<h4>h4. Bootstrap heading</h4>
-<div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
+  <!-- carrusel -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://turismo.buenosaires.gob.ar/sites/turismo/files/ateneo_grand_splendid_1500x610.jpg" class="d-block w-100" alt="foto 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.clarin.com/img/2020/12/02/el-ateneo-gran-splendid-con___tFb3M_SSw_0x750__6.jpg#1607115052858" class="d-block w-100" alt="foto 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.clarin.com/img/2020/10/07/un-espacio-arquitectonico-unico-le___EcNDlmtvD_0x750__7.jpg#1607115410465" class="d-block w-100" alt="foto 3">
       </div>
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Accordion Item #2
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Accordion Item #3
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
+  <section class="w-50 mx-auto text-center pt-5" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">Tus libros en un solo lugar
+        <span class="text-primary">
+            Ricciardi Libros
+        </span>    
+  </section>
+  <section class="container-fluid">
+    <div class="row 75 mx-auto servicio-fila d-flex justify-content-center">
+        <div class="col">            
+            <img src="img/papeles.jpg" alt="papel" width="180" height="280">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <h3 class="fs-5 mt-4 px-4 pb-1">Papeles en el viento</h3>
+                <p class="px-4">
+                    ¿Cómo vender a un delantero que no hace goles? ¿Cómo moverse en un mundo cuyas reglas se desconocen? ¿Cómo seguir siendo amigos si los fracasos van abriendo fisuras en las antiguas lealtades? Fernando, Mauricio y el Ruso, con las escasas herramientas que poseen, desplegarán una serie de estrategias nacidas del ingenio, la torpeza, el desconcierto o la inspiración, para conseguir su objetivo. Alejandro, "El Mono", ha muerto. Su hermano y sus amigos, un grupo de hierro desde la infancia, apenas se dan tiempo para el dolor. Les preocupa Guadalupe, la hija del Mono. Quieren darle todo el amor que sentían por su amigo y asegurarle un futuro. Pero en el banco no quedó un peso. El Mono invirtió todo el dinero que tenía en la compra de un jugador de fútbol, un muchacho que prometía pero se quedó en promesa. Ahora está a préstamo en un club zaparrastroso del Interior. Y los trescientos mil dólares que costó su pase, a punto de evaporarse. Eduardo Sacheri demuestra una vez más su capacidad para construir personajes entrañables y contar historias que llegan de inmediato al lector. Papeles en el viento es un canto a la amistad, y una prueba de que el amor y el humor pueden más que la melancolía. Una invitación a pensar sobre el poder de la vida para abrirse paso a través del dolor y poner otra vez en marcha la rueda de los días. La crítica ha dicho... «Con un vértigo notable a la hora de contar y una estética tan marginal como atractiva, Papeles en el viento se luce además con metáforas y referencias futuras.
+                </p>
+            </div>
+        </div>
+
+        <div class="row 75 mx-auto  servicio-fila d-flex justify-content-center">
+            <div class="col">             
+            <img src="img/cocinera.jpg" alt="cocinera" width="180" height="280">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+            <h3 class="fs-5 mt-4 px-4 pb-1">La cocinera de castamar</h3>
+            <p class="px-4">
+                Clara, una joven caída en desgracia, sufre de agorafobia desde que perdió a su padre de forma repentina. Gracias a su prodigiosa cocina logra acceder al ducado de Castamar como oficial, trastocando con su llegada el apático mundo de don Diego, el duque. Este, desde que perdió a su esposa en un accidente, vive aislado en su gran mansión rodeado del servicio. Clara descubrirá pronto que la calma que rodea la hacienda es el preludio de una tormenta devastadora cuyo centro será Castamar, su señor y ella misma. Fernando J. Múñez teje para el lector, con una prosa detallista y delicada, una urdimbre de personajes, intrigas, amores, envidias, secretos y mentiras que se entrecruzan en una impecable recreación de la España de 1720.
+            </p>
+            </div>        
+        <div>
+            
+            <img src="img/cronica.jpg" alt="cronica" width="180" height="280">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+            <h3 class="fs-5 mt-4 px-4 pb-1">Cronica de una muerte anunciada</h3>
+            <p class="px-4">Acaso sea 'Crónica de una muerte anunciada' la obra más 'realista' de Gabriel García Márquez, pues se basa en un hecho histórico acontecido en la tierra natal del escritor.
+                Cuando empieza la novela, ya se sabe que los hermanos Vicario van a matar a Santiago Nasar -de hecho ya le han matado- para vengar el honor ultrajado de su hermana ngela, pero el relato termina precisamente en el momento en que Santiago Nasar muere. El tiempo cíclico, tan utilizado por García Márquez en sus obras, reaparece aquí minuciosamente descompuesto en cada uno de sus momentos, reconstruido prolija y exactamente por el narrador, que va dando cuenta de lo que sucedió mucho tiempo atrás, que avanza y retrocede en su relato y hasta llega mucho tiempo después para contar el destino de los supervivientes. La acción es, a un tiempo, colectiva y personal, clara y ambigua, y atrapa al lector desde un principio, a pesar de que conoce el desenlace de la trama. La dialéctica entre mito y realidad se ve potenciada aquí, una vez más, por una prosa tan cargada de fascinación que los eleva hasta las fronteras de la leyenda.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="local">
+        <div class="mapa"></div>
+    </div>
+  </section>
+
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
